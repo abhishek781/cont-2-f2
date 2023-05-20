@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+  <style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    .container {
+      margin: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+
+    .user-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Filter ui cards via there profession</h2>
+    <select id="profession">
+      <option value="">profession</option>
+      <option value="developer">Developer</option>
+      <option value="admin">Admin</option>
+    </select>
+    
+    <div id="userList"></div>
+    <br>
+    <button onclick="filterUsers()">Filter</button>
+
+    <h3>Add a new user</h3>
+    <label for="name">Enter name</label>
+    <input type="text" id="name">
+    <label for="age">Enter age</label>
+    <input type="text" id="age">
+    <label for="newProfession">Enter Profession</label>
+    <input type="text" id="newProfession">
+    <br>
+    <button onclick="addUser()">Add User</button>
+  </div>
+<script src="cont.js"></script>
+</body>
+</html>
